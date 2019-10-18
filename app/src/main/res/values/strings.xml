@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Layout HDI</string>
+    <string name="content_description">Face ID image</string>
+    <string name="teste">teste</string>
+    <string name="headerDescription">Imagem face ID</string>
+    <string name="novidadeFaceId"> <b>Novidade - Login por Imagem</b></string>
+</resources>
