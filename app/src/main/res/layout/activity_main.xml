@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_vertical"
+    android:background="@color/colorWhite"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/imagens"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/biometric_header"
-            android:contentDescription="@string/headerDescription"
+        <RelativeLayout
+            android:id="@+id/primeiraImagen"
+            android:layout_alignParentTop="true"
             android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/biometric_header" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <FrameLayout
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="110dp"
-            android:layout_gravity="center"
+            <ImageView
+                android:id="@+id/biometric_header"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/headerDescription"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/biometric_header" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/segundaImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="220dp"
             android:background="@color/colorWhite"
             android:visibility="visible">
 
-            <FrameLayout
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
@@ -42,22 +52,98 @@
                 android:visibility="visible">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_scan">
-                </ImageView>
-            </FrameLayout>
-        </FrameLayout>
-    </FrameLayout>
+                    android:id="@+id/biometric_header2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/headerDescription"
+                    android:src="@drawable/ic_scan" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/testee"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/novidadeFaceId"
-        android:textColor="@color/colorGreen"
-        android:textSize="20dp"
-        android:visibility="visible" />
+    <RelativeLayout
+        android:id="@+id/firstText"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/novidadeFaceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novidadeFaceID"
+            android:textColor="@color/colorGreen"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/descricaoNovidadeFaceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/descricaoNovidadeFaceID"
+            android:textColor="@color/colorLightGray"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thirdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/autorizaoFaceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/autorizaoFaceID"
+            android:textColor="@color/colorDarkGray"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+         <Button
+            android:id="@+id/yesButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/noButton"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:text="@string/confirmarFaceID"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:text="@string/negarFaceID"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorGreen"/>
+
+        </RelativeLayout>
+
+</LinearLayout>
