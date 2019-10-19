@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         yesButton = findViewById(R.id.yesButton);
         noButton = findViewById(R.id.noButton);
-        
+
         biometric_header.setImageResource(R.drawable.biometric_header);
 
     }

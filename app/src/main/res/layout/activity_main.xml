@@ -118,32 +118,34 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="128dp"
+        android:layout_marginTop="120dp">
 
-         <Button
+        <Button
             android:id="@+id/yesButton"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_above="@+id/noButton"
-            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/autorizaoFaceID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/noButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/colorGreen"
             android:text="@string/confirmarFaceID"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite" />
 
         <Button
             android:id="@+id/noButton"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/textview_border"
             android:text="@string/negarFaceID"
-            android:layout_marginBottom="10dp"
-            android:textColor="@color/colorGreen"/>
+            android:textColor="@color/colorGreen" />
 
-        </RelativeLayout>
+    </RelativeLayout>
 
 </LinearLayout>
