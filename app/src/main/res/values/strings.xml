@@ -4,7 +4,7 @@
     <string name="teste">teste</string>
     <string name="headerDescription">Imagem face ID</string>
     <string name="novidadeFaceID"><b>Novidade - Login por Imagem</b></string>
-    <string name="descricaoNovidadeFaceID">Agora você poderá fazer seu login utilizando a opção de reconhecimento facial!</string>
+    <string name="descricaoNovidadeFaceID">Agora você poderá fazer seu login utilizando\na opção de reconhecimento facial!</string>
     <string name="autorizaoFaceID">Deseja utilizá-lo para fazer login\ne aumentar a segurança no uso do APP?</string>
     <string name="confirmarFaceID">SIM, DESEJO UTILIZAR</string>
     <string name="negarFaceID">AGORA NÃO</string>

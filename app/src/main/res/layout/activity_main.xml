@@ -78,52 +78,41 @@
             android:visibility="visible" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/secondText"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:id="@+id/descricaoNovidadeFaceID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="@string/descricaoNovidadeFaceID"
-            android:textColor="@color/colorLightGray"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:visibility="visible" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/thirdText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center">
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/descricaoNovidadeFaceID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:text="@string/descricaoNovidadeFaceID"
+            android:textColor="@color/colorLightGray"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:visibility="visible" />
 
         <TextView
             android:id="@+id/autorizaoFaceID"
-            android:layout_width="wrap_content"
+            android:layout_below="@+id/descricaoNovidadeFaceID"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            android:layout_marginTop="10dp"
             android:text="@string/autorizaoFaceID"
             android:textColor="@color/colorDarkGray"
             android:textStyle="bold"
             android:textSize="15sp"
             android:visibility="visible" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="128dp"
-        android:layout_marginTop="120dp">
 
         <Button
             android:id="@+id/yesButton"
-            android:layout_below="@+id/autorizaoFaceID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/noButton"
@@ -132,7 +121,8 @@
             android:layout_marginBottom="10dp"
             android:background="@color/colorGreen"
             android:text="@string/confirmarFaceID"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorWhite"
+            android:visibility="visible"/>
 
         <Button
             android:id="@+id/noButton"
@@ -145,7 +135,6 @@
             android:background="@drawable/textview_border"
             android:text="@string/negarFaceID"
             android:textColor="@color/colorGreen" />
-
     </RelativeLayout>
 
 </LinearLayout>
