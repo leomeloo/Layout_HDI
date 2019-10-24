@@ -61,7 +61,7 @@
         <RelativeLayout
             android:id="@+id/firstText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_below="@+id/segundaImagen">
 
             <TextView
@@ -99,20 +99,14 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:visibility="visible" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/firstText"
-            android:layout_alignParentBottom="true">
 
             <Button
                 android:id="@+id/yesButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/noButton"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@color/colorGreen"
                 android:text="@string/confirmarFaceID"
                 android:textColor="@color/colorWhite"
@@ -123,10 +117,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="10dp"
                 android:background="@drawable/textview_border"
                 android:text="@string/negarFaceID"
-                android:textColor="@color/colorGreen" />
+                android:textColor="@color/colorGreen"
+                android:layout_margin="10dp"/>
+
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>
